@@ -33,4 +33,8 @@ export const EXPLANATIONS:Record<string,string> = {
  'trachea':'The main airway connecting the larynx to the bronchi. Its cartilage supports keep the airway open during breathing.',
  'diaphragm':'A broad muscle separating the chest and abdomen. When it contracts, it increases chest volume and helps draw air into the lungs.',
 };
-export function explanation(name:string,system:SystemId){return EXPLANATIONS[name.toLowerCase()] ?? SYSTEMS.find(s=>s.id===system)?.description ?? '';}
+export function explanation(name: string, system: SystemId) {
+ const specific = EXPLANATIONS[name.toLowerCase()];
+ return specific ? { text: specific, specific: true }
+  : { text: SYSTEMS.find(item => item.id === system)?.description ?? '', specific: false };
+}
