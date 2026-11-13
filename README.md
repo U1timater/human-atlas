@@ -3,6 +3,7 @@
 An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
 
 **[Explore the live demo](https://u1timater.github.io/human-atlas/)**
+· **[简体中文](https://u1timater.github.io/human-atlas/?lang=zh)**
 
 ## Explore
 
@@ -12,6 +13,7 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 - Search anatomical names and source identifiers.
 - Isolate a selected structure and read its details.
 - Use compact controls and detail panels on mobile.
+- Switch between English and Simplified Chinese. Search by either language or an atlas identifier.
 
 ## Run locally
 
@@ -30,6 +32,7 @@ Open http://localhost:3016. To build the static site, run `npm run build`; the o
 npm run check
 node scripts/validate-atlas.mjs
 node scripts/validate-interactions.mjs
+node scripts/validate-chinese.mjs
 npm run build
 ```
 
