@@ -15,6 +15,10 @@ Source OBJ comments mention an older CC BY-SA 2.1 Japan license. The official cu
 
 BodyParts3D represents an adult male reference anatomy based on TARO MRI and anatomical illustration refinements. It is not a complete model of every possible human anatomical structure or variation. This interface is educational and is not a clinical tool.
 
+## Simplified Chinese terminology
+
+The Chinese names adapt the [Chinese glossary contributed by undergravity](https://github.com/undergravity/human-atlas/blob/d82f3e04602b83cf9a0847fa7497d93a7827e1fe/app/dict.json) to this version of the BodyParts3D catalogue. The source fork carries the [MIT license](https://github.com/undergravity/human-atlas/blob/d82f3e04602b83cf9a0847fa7497d93a7827e1fe/LICENSE). The adaptation maps names by FMA identifier and corrects truncated labels, laterality, and several general terms. The viewer retains the original English labels and identifiers alongside the Chinese display.
+
 ## Historical assets (not included in the current release)
 
 Earlier repository revisions included female reference anatomy: Kristen Browne and Heidi Schlehlein, Human Reference Atlas / HuBMAP, *3D Reference Organ Set for Female v1.5* (2023). CC BY 4.0. Geometry adapted for this viewer.
