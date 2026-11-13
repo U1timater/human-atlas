@@ -1,3 +1,7 @@
+export function modelAssetUrl(path: string): string {
+ return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+}
+
 /** Static hosts may serve .gz as a compressed response or as a gzip file.
  * Fetch already decodes Content-Encoding; inspect the payload to avoid decoding twice.
  */
