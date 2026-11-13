@@ -2,7 +2,7 @@
 
 An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
 
-**[Explore the live demo](https://human-atlas-seven.vercel.app)**
+**[Explore the live demo](https://u1timater.github.io/human-atlas/)**
 
 ## Explore
 
@@ -54,6 +54,8 @@ The optional WebMCP tools expose anatomy search and inspection in compatible bro
 The repository includes browser-ready geometry. Rebuilding it is optional: obtain the official BodyParts3D OBJ archive and English metadata tables, prepare the joined concepts and display-system mappings, run `scripts/convert-anatomy.py`, then `node scripts/optimize-anatomy.mjs` and `node scripts/compress-models.mjs`. Simplification uses a 0.2% relative error limit per structure.
 
 ## Deploy
+
+The GitHub Pages workflow builds and publishes the site from `main`. To deploy another fork, select **GitHub Actions** as the source under **Settings → Pages**, then run **Deploy Human Atlas** from the **Actions** tab.
 
 Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. It can also be served by a static host.
 
